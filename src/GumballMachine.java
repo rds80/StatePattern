@@ -76,6 +76,11 @@ public class GumballMachine {
         }
     }
 
+    public void refill(int numberofGumballs) {
+        this.count = numberofGumballs;
+        state = NO_QUARTER;
+    }
+
     public String toString() {
         StringBuffer result = new StringBuffer();
         result.append("\nMighty Gumball, Inc.");
